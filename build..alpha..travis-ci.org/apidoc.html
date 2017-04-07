@@ -1,0 +1,127 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/lacroixdesign/node-bourbon#readme"
+
+    >node-bourbon (v4.2.8)</a>
+</h1>
+<h4>node-sass wrapper for thoughtbot's bourbon library</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.node-bourbon">module node-bourbon</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.node-bourbon.with">
+            function <span class="apidocSignatureSpan">node-bourbon.</span>with
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">node-bourbon.</span>includePaths</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.node-bourbon" id="apidoc.module.node-bourbon">module node-bourbon</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.node-bourbon.with" id="apidoc.element.node-bourbon.with">
+        function <span class="apidocSignatureSpan">node-bourbon.</span>with
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">with = function () {
+  var paths  = Array.prototype.slice.call(arguments);
+  return [].concat.apply([bourbon.includePaths], paths);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+The `with()` function will include any additional paths you pass as arguments.
+
+Returns an array of paths.
+
+```javascript
+var bourbon = require(&#x27;node-bourbon&#x27;);
+// Any of these will return an array of Bourbon paths plus your custom path(s)
+bourbon.<span class="apidocCodeKeywordSpan">with</span>(&#x27;path/to/stylesheets&#x27;)
+bourbon.with(&#x27;path/to/stylesheets1&#x27;, &#x27;path/to/stylesheets2&#x27;)
+bourbon.with([&#x27;path/to/stylesheets1&#x27;, &#x27;path/to/stylesheets2&#x27;])
+```
+
+### includePaths Property
+
+The `includePaths` property returns an array of Bourbon&#x27;s paths to use in your config.
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
