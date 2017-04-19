@@ -1,9 +1,14 @@
-# api documentation for  [node-bourbon (v4.2.8)](https://github.com/lacroixdesign/node-bourbon#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-node-bourbon.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node-bourbon) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node-bourbon.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node-bourbon)
+# npmdoc-node-bourbon
+
+#### api documentation for  [node-bourbon (v4.2.8)](https://github.com/lacroixdesign/node-bourbon#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-node-bourbon.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node-bourbon) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node-bourbon.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node-bourbon)
+
 #### node-sass wrapper for thoughtbot's bourbon library
 
-[![NPM](https://nodei.co/npm/node-bourbon.png?downloads=true)](https://www.npmjs.com/package/node-bourbon)
+[![NPM](https://nodei.co/npm/node-bourbon.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/node-bourbon)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-node-bourbon/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-node-bourbon_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-node-bourbon/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-node-bourbon/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-node-bourbon/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-node-bourbon/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-node-bourbon/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-node-bourbon/build/screenCapture.npmPackageListing.svg)
 
@@ -18,7 +23,6 @@
 {
     "author": {
         "name": "Michael LaCroix",
-        "email": "michael@lacroixdesign.net",
         "url": "http://www.lacroixdesign.net"
     },
     "bugs": {
@@ -48,13 +52,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "iamlacroix",
-            "email": "michael@lacroixdesign.net"
+            "name": "iamlacroix"
         }
     ],
     "name": "node-bourbon",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/lacroixdesign/node-bourbon.git"
@@ -64,47 +66,6 @@
     },
     "version": "4.2.8"
 }
-```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module node-bourbon](#apidoc.module.node-bourbon)
-1.  [function <span class="apidocSignatureSpan">node-bourbon.</span>with ()](#apidoc.element.node-bourbon.with)
-1.  object <span class="apidocSignatureSpan">node-bourbon.</span>includePaths
-
-
-
-# <a name="apidoc.module.node-bourbon"></a>[module node-bourbon](#apidoc.module.node-bourbon)
-
-#### <a name="apidoc.element.node-bourbon.with"></a>[function <span class="apidocSignatureSpan">node-bourbon.</span>with ()](#apidoc.element.node-bourbon.with)
-- description and source-code
-```javascript
-with = function () {
-  var paths  = Array.prototype.slice.call(arguments);
-  return [].concat.apply([bourbon.includePaths], paths);
-}
-```
-- example usage
-```shell
-...
-The 'with()' function will include any additional paths you pass as arguments.
-
-Returns an array of paths.
-
-'''javascript
-var bourbon = require('node-bourbon');
-// Any of these will return an array of Bourbon paths plus your custom path(s)
-bourbon.with('path/to/stylesheets')
-bourbon.with('path/to/stylesheets1', 'path/to/stylesheets2')
-bourbon.with(['path/to/stylesheets1', 'path/to/stylesheets2'])
-'''
-
-### includePaths Property
-
-The 'includePaths' property returns an array of Bourbon's paths to use in your config.
-...
 ```
 
 
