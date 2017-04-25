@@ -1,6 +1,6 @@
 # npmdoc-node-bourbon
 
-#### api documentation for  [node-bourbon (v4.2.8)](https://github.com/lacroixdesign/node-bourbon#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-node-bourbon.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node-bourbon) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node-bourbon.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node-bourbon)
+#### basic api documentation for  [node-bourbon (v4.2.8)](https://github.com/lacroixdesign/node-bourbon#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-node-bourbon.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-node-bourbon) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-node-bourbon.svg)](https://travis-ci.org/npmdoc/node-npmdoc-node-bourbon)
 
 #### node-sass wrapper for thoughtbot's bourbon library
 
@@ -64,7 +64,8 @@
     "scripts": {
         "test": "mocha --reporter spec --recursive --growl"
     },
-    "version": "4.2.8"
+    "version": "4.2.8",
+    "bin": {}
 }
 ```
 
